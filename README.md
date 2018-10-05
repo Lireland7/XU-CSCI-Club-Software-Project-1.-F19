@@ -8,16 +8,16 @@ Fall 19 Project
 
 
 Services (Leaders): 
-Nick Stone 
-Maggie Mohaney 
+-Nick Stone 
+-Maggie Mohaney 
 
 
 Back End (Leaders): 
-Naomi 
-Yasmin Alvarado-Rayo 
+-Naomi 
+-Yasmin Alvarado-Rayo 
 
 
 
 Front End (Leaders): 
-Gavin Kyte 
-Nina Eisneberg 
+-Gavin Kyte 
+-Nina Eisneberg 
