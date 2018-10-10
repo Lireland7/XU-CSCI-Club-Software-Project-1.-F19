@@ -43,6 +43,10 @@ dependencies {
 	runtimeOnly('mysql:mysql-connector-java')
 	testImplementation('org.springframework.boot:spring-boot-starter-test')
 	testImplementation('org.springframework.security:spring-security-test')
+	// https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api
+	testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.3.1'
+	// https://mvnrepository.com/artifact/org.codehaus.sonar/sonar-plugin-api
+	//provided group: 'org.codehaus.sonar', name: 'sonar-plugin-api', version: '5.1'
 }
 
 dependencyManagement {
