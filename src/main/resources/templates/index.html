@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>Event Scheduler</title>
@@ -12,6 +12,21 @@
 
     <h4>Who are we: </h4>
     <p>We are a group of students from Xavier University, who wanted to make an event scheduler by students and for students, aimed at the needs of people in education</p>
+
+    <h4>Things to do:</h4>
+
+    <!--the th:href tells thymeleaf to take care of the redirect.-->
+    <!--in the below example, it finds "scheduler" in the various controllers-->
+    <a th:href="@{/scheduler}">schedule an event</a>
+
+    <ul>
+        <li>Go to localhost:8080/scheduler to schedule an event</li>
+        <li>Implement the scheduler</li>
+        <li>backend</li>
+        <li>link backend through the EventSchedulerHandler.java</li>
+        <li>make a navigation bar</li>
+        <li>css</li>
+    </ul>
 
 </body>
 </html>

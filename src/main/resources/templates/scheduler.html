@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Scheduler</title>
+</head>
+
+<body>
+    <div id="header">
+        <h3>Event Scheduler</h3>
+    </div>
+
+    <form method="post" th:action="@{/scheduler}" th:object="${Event}" name="Schedule Event">
+        <!--th:fields will be called with the getters and setters in "Event.java"-->
+        <!--this is determined by the th:object="${Event}"-->
+        <!--if the field does not exist, you will get a run-time error, with the line number matching the given field/input-->
+        <tr>
+            <td>Hour: </td>
+            <td><input type="number" name="hour" th:field="*{hour}"/></td>
+        </tr>
+        <table>
+            <tr>
+                <td>Month: </td>
+                <td><input type="number" name="month" th:field="*{month}"/></td>
+            </tr>
+            <tr>
+                <td>Day: </td>
+                <td><input type="number" name="day" th:field="*{day}"/></td>
+            </tr>
+            <tr>
+                <td>Month: </td>
+                <td><input type="number" name="day" th:field="*{day}"/></td>
+            </tr>
+            <tr>
+                <td>Hour: </td>
+                <td><input type="number" name="hour" th:field="*{hour}"/></td>
+            </tr>
+            <tr>
+                <td>Minute: </td>
+                <td><input type="number" name="minute" th:field="*{minute}"/></td>
+            </tr>
+            <tr>
+                <td><input type="submit" name="submit"/></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
